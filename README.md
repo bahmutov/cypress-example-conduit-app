@@ -1,4 +1,4 @@
-# Conduit App [![renovate-app badge][renovate-badge]][renovate-app]
+# Conduit App [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-8.5.0-brightgreen)
 
 Fork of [cypress-io/cypress-example-conduit-app](https://github.com/cypress-io/cypress-example-conduit-app) which is a fork of [gothinkster/realworld](https://github.com/gothinkster/realworld) "Conduit" blogging application.
 
