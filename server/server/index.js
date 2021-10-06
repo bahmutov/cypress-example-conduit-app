@@ -3,22 +3,19 @@
 const Glue = require('glue')
 const Manifest = require('./manifest')
 
-exports.deployment = async start => {
+exports.deployment = async (start) => {
   const manifest = Manifest.get('/')
-  const server = await Glue.compose(
-    manifest,
-    { relativeTo: __dirname }
-  )
+  const server = await Glue.compose(manifest, { relativeTo: __dirname })
 
   await server.initialize()
 
   // let's not include code coverage utility code in our coverage report
   // https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md
   /* istanbul ignore next */
-  if (global.__coverage__) {
-    console.log('registering coverage middleware')
-    require('@cypress/code-coverage/middleware/hapi')(server)
-  }
+  // if (global.__coverage__) {
+  //   console.log('registering coverage middleware')
+  //   require('@cypress/code-coverage/middleware/hapi')(server)
+  // }
 
   if (!start) {
     return server
@@ -34,7 +31,7 @@ exports.deployment = async start => {
 if (!module.parent) {
   exports.deployment(true)
 
-  process.on('unhandledRejection', err => {
+  process.on('unhandledRejection', (err) => {
     throw err
   })
 }

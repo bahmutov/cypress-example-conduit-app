@@ -6,7 +6,7 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 
   // tasks for code coverage
-  require('@cypress/code-coverage/task')(on, config)
+  // require('@cypress/code-coverage/task')(on, config)
 
   // tasks for resetting database during tests
   on('task', {
