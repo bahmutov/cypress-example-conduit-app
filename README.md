@@ -18,5 +18,11 @@ The tests are in [cypress/integration](cypress/integration) folder
 - [pagination-spec.js](cypress/integration/pagination-spec.js) creates many articles via API calls and then checks if they are displayed across two pages
 - [force-logout-spec.js](cypress/integration/force-logout-spec.js) verifies that unauthorized API calls force the user session to finish
 
+## Install
+
+```shell
+$ npm install
+```
+
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
 [renovate-app]: https://renovateapp.com/

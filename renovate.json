@@ -20,9 +20,8 @@
       "packagePatterns": ["*"],
       "excludePackagePatterns": [
         "@bahmutov/cy-api",
-        "@cypress/code-coverage",
         "cypress",
-        "istanbul-lib-coverage"
+        "start-server-and-test"
       ],
       "enabled": false
     }

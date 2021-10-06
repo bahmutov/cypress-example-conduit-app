@@ -15,8 +15,7 @@
   "scripts": {
     "start": "node server",
     "start:coverage": "../node_modules/.bin/nyc --silent node server",
-    "test": "lab -a code -I '__core-js_shared__' -L",
-    "lint": "eslint ."
+    "test": "lab -a code -I '__core-js_shared__' -L"
   },
   "dependencies": {
     "avocat": "1.1.0",
@@ -40,14 +39,5 @@
     "slugify": "1.4.0",
     "sqlite3": "4.1.1",
     "toys": "2.3.1"
-  },
-  "devDependencies": {
-    "code": "5.2.4",
-    "eslint": "6.8.0",
-    "eslint-config-hapi": "12.0.0",
-    "eslint-plugin-hapi": "4.1.0",
-    "hpal-debug": "1.4.0",
-    "lab": "18.0.2",
-    "newman": "4.6.1"
   }
 }
